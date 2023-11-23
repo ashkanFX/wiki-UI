@@ -1,0 +1,4 @@
+/*تغییر ساختار css پروژه */
+:host >>>.p-tieredmenu {
+  width: 100% !important;
+}

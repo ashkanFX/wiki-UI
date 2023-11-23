@@ -1,0 +1,23 @@
+/* Hide the menu items by default */
+.navbar-items {
+  display: none;
+}
+
+/* Show the menu items when the screen size is above a certain width */
+@media (min-width: 768px) {
+  .navbar-items {
+    display: flex;
+  }
+}
+
+/* Style for the responsive menu icon (hamburger menu) */
+.responsive-icon {
+  display: block;
+}
+
+/* Hide the menu icon on larger screens */
+@media (min-width: 768px) {
+  .responsive-icon {
+    display: none;
+  }
+}

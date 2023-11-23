@@ -1,0 +1,22 @@
+<p-card header="{{_title | titlecase}}" subheader="{{subTitle}}" [style]="{ width: '100%' }">
+  <ng-template pTemplate="header">
+  </ng-template>
+  <ng-template pTemplate="pTemplate" class="p-0">
+    <section class="flex col-12 align-items-center justify-content-between ">
+      <div class=" col-4">
+        <img alt="Card" src="{{Img}}"
+             class="w-16rem h-10rem border-round-3xl " style="object-fit: cover"/>
+      </div>
+      <div class=" col-8 h-full">
+        <p class="inline"> {{description | textFilter : "/home" }}
+        </p>
+      </div>
+    </section>
+  </ng-template>
+
+  <ng-template pTemplate="footer">
+    <div class="flex justify-content-end ">
+      <p-button label="Save" icon="pi pi-caret-right"></p-button>
+    </div>
+  </ng-template>
+</p-card>
